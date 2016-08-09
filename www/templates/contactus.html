@@ -1,0 +1,88 @@
+<ion-view view-title="Contact Us">
+ 
+<ion-content  ng-controller="contactCtrl">
+<br>
+<form  name="myForm" ng-submit="Submit()" class="form-group"  novalidate>
+				<div class="card12" style="margin-left:10px;font-size:20px;">
+							<h4>Contact Us</h4>
+							<h5>Feel free to contact us</h5>
+							<hr style="border:1px solid #333;">
+						</div>
+						<ul class="list">
+							<li class="item2" >
+								<div class="roww">
+									<div class="col">Name</div>
+									<div class="col col-35">
+										<input   value="" ng-model="name" type="text" placeholder="Enter Name" class="button button-stable"/>
+									</div>
+								</div>
+							</li>
+							<li class="item2" >
+								<div class="roww">
+									<div class="col">Email Address</div>
+									<div class="col col-35">
+									<input   value="" type="text" ng-model="email" placeholder="Enter email"  class="button button-stable"/>
+									</div>	
+								</div>	
+							</li>
+							<li class="item2" >
+								<div class="roww">
+									<div class="col">Subject</div>
+									<div class="col col-35">
+										<input id="leave" placeholder="Enter subject" ng-model="subject" type="text" value="" class="button button-stable"/>
+											<!-- 1647&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TL -->
+										<!-- </input> -->
+									</div>	
+								</div>	
+							</li>
+							<li class="item2" >
+								<div class="roww">
+									 <div class="border">
+										<textarea class="text"  ng-model="answertyped" placeholder="Message.." ></textarea> 
+		                             </div> 
+								</div>	
+							</li>
+						
+		<label class="item"    style="background-color:#fff !important;">
+          <button class="button button-positive btn1" ng-disabled="myForm.$invalid" type="submit" style="width:100%;display: block;margin-right: 0px;margin-left: 0; margin-top: 5px; margin-bottom: 5px; border-right-width: 1px;border-left-width: 1px;border-radius: 4px;">Message Send</button>
+        </label>	
+						</ul>
+	
+	
+	</form>
+	<div class="footer">
+	  <!-- <i class="icon ion-android-globe" style="font-size:20px;"></i>  -->
+	
+	 <h3 class="text-center icon ion-android-globe">  Our Office</h3>
+	  <h5 class="text-center">Hauduai? Nigeria Limited   <br>
+
+Lagos, Nigeria.</h5>
+	
+	</div>
+</ion-content>
+<!-- <div class="tabs">
+	  <a href="#/app/new" class="tab-item clr">
+		Recent Questions
+	  </a>
+	  <a href="#/app/mostresponse" class="tab-item clr">
+		Most Responses
+	  </a>
+	  <a href="#/app/recentans" class="tab-item clr active">
+		Recently Answered
+	  </a>
+	  <a  href="#/app/noans" class="tab-item clr">
+		No Answers
+	  </a>
+	</div> -->
+</ion-view >
+
+<style>
+ .bar .back-button.hide {
+    display: inherit !important;
+	color:white;
+} 
+.active{
+	background-color:#0169b0;
+}
+
+</style>

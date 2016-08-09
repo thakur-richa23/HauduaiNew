@@ -1,0 +1,91 @@
+<ion-view view-title="Recently Asked">
+ 
+<ion-content  ng-controller="answeresctrl">
+<br>
+ <div class="list">
+		
+		
+		<div class="item item-thumbnail-left" style="background-color:white !important;">
+		  <img src="http://hauduai.com.ng/{{que.user_image | imageempty}}" style="border-radius:60px !important;">
+		  <div class="box2">
+		  <p style="white-space: initial !important;"><span style="color:blue;">Question:</span> {{que.question}}</p>
+		  <h2><span style="color:blue;">User:</span> {{que.full_name}}</h2>
+		  <h2><span style="color:blue;">User Type:</span> {{que.type}}</h2>
+		  <h2><span style="color:blue;">Suffix:</span> {{que.suffix}}</h2>
+		  <h2><span style="color:blue;">Sector Category:</span> {{que.sector_category_name}}</h2>
+		  <h2><span style="color:blue;">Sub Sector Category:</span> {{que.sector_sub_category_name}}</h2>
+		  
+		  <h2><span style="color:blue;">Selection Area:</span> {{que.selection_area2}}</h2>
+		  <h2><span style="color:blue;">Sub Selct-Area:</span> {{que.selection_area2_sub}}</h2>
+		  
+		  </div>
+		  
+		  <div class="row">
+			<p>{{que.created | dateago}}&nbsp;</p>
+				&nbsp&nbsp;			
+			<!-- <p>Views: 256</p> -->
+		  </div>
+		</div>
+		<div class="box" >
+		   
+		  <a class="respond" href="#/app/anscomm/{{id}}">Submit Your Answer</a>
+		  </div>
+		<div class="item" style="background-color:white !important;" ng-show="answer_notavail">
+		  
+		  <!-- <div class="box2" style="font-size:16px;">
+		  <h2>No Answers For this Question</h2>
+		  
+		  </div> -->
+		  
+		  
+		</div>
+		<br>
+		<br>
+		
+		<div class="item item-thumbnail-left" style="background-color:white !important;    padding-left: 0px;" ng-show="answer_avail" ng-repeat="x in livenks">
+		  <hr>
+		  <div class="box2">
+		  <h2 style="white-space: initial !important;"><span style="color:red;">Answer : </span>{{x.ans | htmlToPlaintext}}</h2>
+		   <p><span style="color:blue;">User : </span>{{x.name}}</p>
+		  </div>
+		  
+		  
+		</div>
+		
+    
+
+	</div>
+	
+	
+	
+	
+	 <ion-infinite-scroll  distance="1%"  ng-if="noMoreItemsAvailable" on-infinite="loadolder()" style="background-color:white !important;" >
+  </ion-infinite-scroll>
+</ion-content>
+<!-- <div class="tabs">
+	  <a href="#/app/new" class="tab-item clr">
+		Recent Questions
+	  </a>
+	  <a href="#/app/mostresponse" class="tab-item clr">
+		Most Responses
+	  </a>
+	  <a href="#/app/recentans" class="tab-item clr active">
+		Recently Answered
+	  </a>
+	  <a  href="#/app/noans" class="tab-item clr">
+		No Answers
+	  </a>
+	</div> -->
+</ion-view >
+
+<style>
+ .bar .back-button.hide {
+    display: inherit !important;
+	color:white;
+} 
+.active{
+	background-color:#0169b0;
+}
+
+
+</style>

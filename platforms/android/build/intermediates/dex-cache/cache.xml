@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_45ab30bbf6c84c68e4f72e7bd7731baadbd16f95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\libs\cordova-generic-ad.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3ddc99d9a0bfde0e34e8878f735cedd9cfcf7b02">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\cordova-generic-ad_146480468c51ce123b38087a588e23dbcdda8012.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.2.1_9d54246b4e170a5ab49292d0efad8a6c92c7c3fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.2.1_7ba00b02fb41e4fbbe51054c283eae93baf540b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.onesignal\OneSignal\2.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e44af4625205a1cdd8909b18834070b5a953869e">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.onesignal-OneSignal-2.3.0_2e626500f450b344ea474e73e79dfe18ea3096bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e81b65b4c99aae8ef2f225abc14b100c1c5c49ce">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\release\CordovaLib-unspecified-release_bdf978643f65cc96d86a3b80dc1eca5955e77e4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab8343c3aadefce37313ceadd8bc4db1993f2ff0">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-10.2.1_e913178e2601b9d63cedc21ccb759ec752f7d2d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-10.2.1_675bc7eb301c0424ed0e913d6e42833db0416c0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d2629be308515d6f76509ec1299b9cc2e10bf453">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_a2073e66b6a1ea3f33ddfc60271d2d72c8af5e21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-iid-10.2.1_674d9c65abd9ff831d98a201db23b62e336e8bdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\libs\gcm.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\gcm_8f8e207695d608045489d51464206b5f83c63fc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_8e712b34a554ea6cad145346d3b92c7112d56b0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfd85a88cf976eb2c54507cc914d8e8914c2f71e">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gass-10.2.1_8e57a326496ffa86f6abf1b2a98de63335962170.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_9634e3f363c8a9e6c2dccdac0966c6cfa929c4f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\libs\cordova-generic-ad.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3ddc99d9a0bfde0e34e8878f735cedd9cfcf7b02">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\cordova-generic-ad_146480468c51ce123b38087a588e23dbcdda8012.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3683531139103cc263b71d8b5ac6062832a8fd30">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-clearcut-10.2.1_1bb0533116983e1fd1c88df6af38d0d89f6e9edd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3c7f923e1df76640acb3a24823600f034a5d226">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-10.2.1_f63f83bdfef4be37e281c21dedc33c415d0d6692.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gcm-10.2.1_4388168eb67bbe6df319da0b44ae0b9bca9c1841.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_a6bf3cdca9d353cc320b6bc7f599b8361bbc1279.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5c606c36276a12a356e351882044c6b4b9e8d4">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-10.2.1_15559db601db882124b0b9763fe52bbc1f8632a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.2.1_f5223e016048c17604fde5fab4d07cfae3061a52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d67042688d34474a82fe4ef4c6514ef471377ef">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-impl-10.2.1_32c181d3f91fe61039f65cce8f91106bae99745c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.onesignal\OneSignal\2.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e44af4625205a1cdd8909b18834070b5a953869e">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.onesignal-OneSignal-2.3.0_2e626500f450b344ea474e73e79dfe18ea3096bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_f73670921d9004cd05ea2ad67f31f38a6358a3a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\libs\gcm.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\gcm_8f8e207695d608045489d51464206b5f83c63fc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e81b65b4c99aae8ef2f225abc14b100c1c5c49ce">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\release\CordovaLib-unspecified-release_bdf978643f65cc96d86a3b80dc1eca5955e77e4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efae381df589f3d4977c346c8a980f030315bb8b">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tagmanager-v4-impl-10.2.1_16e085dd317a88564731318cec06042e547905eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_9b48caa7463f7f01cd33e0b759d2954007c6de4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_1bb7591e0d080e1e5449a8ab153d4a1fe2398099.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d2629be308515d6f76509ec1299b9cc2e10bf453">
+        <dex dex="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_a2073e66b6a1ea3f33ddfc60271d2d72c8af5e21.jar" />
+    </item>
+
+</items>

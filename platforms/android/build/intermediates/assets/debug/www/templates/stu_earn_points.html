@@ -1,0 +1,28 @@
+<ion-view  view-title="How To Earn Points">
+  
+<ion-content  ng-controller="stu_earnpCtrl">
+
+ <div>
+		<div class="item" style="background-color:white !important;">
+		<div class="card12" ng-repeat="x in faqpage">
+		      <h2 style="text-align: justify;"><span style="font-size:18px;color:#292d63;"><b>Page Content</b></span> : {{x.page_content|htmlToPlaintext|removeHTMLTags}}</h2><br>
+			</div>
+			
+		</div>
+	</div>
+</ion-content>
+<div class="tabs">
+	  <a href="#/app/student_new" class="tab-item clr" style="background:#0065ff !important;color:#fff !important;">
+		Recent Questions
+	  </a>
+	  <a href="#/app/stu_mostresponse" class="tab-item clr" style="background:#237bff !important;color:#fff !important;">
+		Most Responses
+	  </a>
+	  <a href="#/app/stu_recents" class="tab-item clr" style="background:#0a6cff !important;color:white !important;">
+		Recently Answered
+	  </a>
+	  <a  href="#/app/stu_noans" class="tab-item clr" style="background:#3a89ff !important;color:white !important;">
+		No Answers
+	  </a>
+	</div>	
+</ion-view >

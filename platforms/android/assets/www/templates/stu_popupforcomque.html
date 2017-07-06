@@ -1,0 +1,78 @@
+<ion-modal-view>
+
+	<ion-header-bar>
+		<h1 class="title" style="color: #fff;
+    text-align: center;">Ask Student Community </h1>
+<div class="buttons">
+	<button class="button button-clear" ng-click="closepop()">Close</button>
+</div>
+</ion-header-bar>
+<ion-content>
+	<div ng-controller="stu_termsandcondCtrl">
+		<form ng-submit="stu_comsubmitque()" name="myfForm">
+			<div class="list">
+				<label class="item item-input" style="background-color:#fff !important;">
+<span class="input-label">Question:</span>
+<input type="text" ng-model="loginData.ques" disabled style="margin-right:10px;">
+</label>
+
+<label class="item item-input" style="background-color:#fff !important;">
+<span class="input-label">Username:</span>
+<input type="text" ng-model="loginData.stu_username" disabled>
+</label>
+<label class="item item-input" style="background-color:#fff !important;">
+<span class="input-label">Email:</span>
+<input type="text" ng-model="loginData.email" disabled>
+</label>
+<label class="item item-input" style="background-color:#fff !important;">
+<span class="input-label">Faculty:</span>
+<input type="text" ng-model="loginData.studentfac" disabled>
+<input type="hidden" ng-model="loginData.studentfacValue" disabled>
+</label>
+<input type="hidden" ng-model="loginData.sfValue">
+<label class="item item-input" style="background-color:#fff !important;">
+<span class="input-label" value="">Course:</span>
+<input type="text" ng-model="loginData.stu_f_field" disabled>
+<input type="hidden" ng-model="loginData.stu_f_fieldValue" disabled>
+</label>
+<label class="item item-input" style="background-color:#fff !important;">
+<span class="input-label" value="">Year Level:</span>
+<input type="text" ng-model="loginData.stu_level_field" disabled>
+<input type="hidden" ng-model="loginData.stu_level_fieldValue" disabled>
+</label><br><br>
+
+<div class="item" ng-if="point_stu.points > '0'" style="background-color:#fff !important;">
+<p>
+	<h2 style="margin-left:40px;font-size:20px;color:blue;">Point Information:</h2><br>
+<span style="color:black;"> Current Balance: {{point_stu.points}}</span><br>
+<span style="color:black;"> Cost of this Question: {{askpoints[0]}}</span><br>
+<span style="color:black;"> Balance after this question Submit: {{point_stu.points-askpoints[0]}}</span><br>
+</p>
+</div>
+<div class="item" ng-if="point_stu.points == '0'" style="background-color:#fff !important;">
+<p>
+	<h2 style="margin-left:40px;font-size:20px;color:blue;">Point Information:</h2><br>
+<span style="color:black;"> Current Balance: {{point_stu.points}}</span><br>
+<span style="color:black;"> Cost of this Question: {{askpoints[0]}}</span><br>
+
+</p>
+</div>
+
+<label class="item" style="background-color:#fff !important;">
+<button class="button button-block button-positive" ng-disabled="myfForm.$invalid" style="background-color:#0169b0 !important;margin-left: -2%;" type="submit">Submit</button>
+</label>
+</div>
+</form>
+</div>
+</ion-content>
+</ion-modal-view>
+<style>
+	#s {
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	
+	.bar-header {
+		background-color: #0169b0;
+	}
+</style>

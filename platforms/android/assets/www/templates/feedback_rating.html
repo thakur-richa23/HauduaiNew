@@ -1,0 +1,15 @@
+<ion-view view-title="Feedback Rating">
+  <ion-nav-buttons side="primary">
+    <a ng-href="#/app/browse" style="display:inline-block;color:#fff;position:fixed;left:10px;top:13px;" class="button-clear">
+<i class="icon ion-chevron-left" style="font-size:17px;"></i>
+</a>
+</ion-nav-buttons>
+<ion-content ng-controller="rateCtrl">
+  <div class="card" style="margin-top:100px;">
+
+<div class="item item-text-wrap" style="background:white !important;color:#3c84b6 !important;font-size:15px !important;">
+<span class="abc" style="font-size:15px; color:#000000">My Overall Satisfaction Rating : </span>{{prof.result}}%<br>
+</div>
+</div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,113 @@
+<ion-view view-title="No Answer">
+
+	<ion-content ng-controller="stu_answeresctrl">
+		<br>
+
+
+		<div class="list" ng-if="que.type=='lecturer'">
+
+
+
+			<div class="item item-thumbnail-left" style="background-color:white !important;">
+<img src="http://hauduai.com.ng/{{que.user_image | imageempty}}" style="border-radius:60px !important;">
+<div class="box2">
+	<p style="white-space:initial !important; color:red;text-align:justify;"><span style="color:blue;font-size:12px;">Question: </span> {{que.question|removeHTMLTags|htmlToPlaintext}}</p>
+<h4>
+	<span style="color:blue;font-size:12px;">Name: </span> {{que.first_name}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">User Type:</span> {{que.type}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">Department: </span> {{que.course_name}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">Specialization: </span> {{que.lec_special}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">Qualification: </span> {{que.lec_qualificaton}}</h4>
+
+</div>
+<div class="row">
+	<p>{{que.created | dateago}}&nbsp;</p>
+	&nbsp;&nbsp;
+</div>
+</div>
+<div class="box">
+
+	<a class="respond" href="#/app/stu_anscomm/{{id}}"> Provide Answer</a>
+</div>
+</div>
+
+<div class="list" ng-if="que.type=='student'">
+
+	<div class="item item-thumbnail-left" style="background-color:white !important;">
+<img src="http://hauduai.com.ng/{{que.user_image | imageempty}}" style="border-radius:60px !important;">
+<div class="box2">
+	<p style="white-space:initial !important; color:red;text-align:justify;"><span style="color:blue;font-size:12px;">Question: </span> {{que.question|removeHTMLTags|htmlToPlaintext}}</p>
+<h4>
+	<span style="color:blue;font-size:12px;">Name: </span> {{que.user_name}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">User Type:</span> {{que.type}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">Course: </span> {{que.course_name}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">Year(Level): </span> {{que.year_level}}</h4>
+<h4>
+	<span style="color:blue;font-size:12px;">University: </span> {{que.university_name}}</h4>
+
+</div>
+<div class="row">
+	<p>{{que.created | dateago}}&nbsp;</p>
+	&nbsp;&nbsp;
+</div>
+</div>
+<div class="box">
+
+	<a class="respond" href="#/app/stu_anscomm/{{id}}"> Provide Answer</a>
+</div>
+</div>
+
+<br>
+
+
+<div class="item item-thumbnail-left" ng-show="answer_avail" ng-repeat="x in livenks" style="background-color:white !important;padding-left:0px; width:100%;">
+
+<div class="list" ng-if="x.type=='student'">
+
+	<div class="box2">
+		<h3 style="white-space: initial !important;margin-bottom:-15px;"><span style="color:red;font-size:x-larger;">Answer : </span>{{x.ans|htmlToPlaintext|removeHTMLTags}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-15px;"><span style="color:red;font-size:x-larger;">Student Name : </span>{{x.first_name}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-15px;"><span style="color:red;font-size:x-larger;">Course :</span> {{x.course}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-15px;"><span style="color:red;font-size:x-larger;">Year(Level) : </span>{{x.year}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-15px;"><span style="color:red;font-size:x-larger;">University : </span>{{x.university}}</h3><br>
+
+<br>
+
+</div>
+</div>
+<div class="list" ng-if="x.type=='lecturer'">
+	<div class="box2">
+		<h3 style="white-space: initial !important;margin-bottom:-8px;"><span style="color:red;font-size:x-larger;">Answer : </span>{{x.ans== "undefined" ? " " : x.ans|htmlToPlaintext|removeHTMLTags}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-8px;"><span style="color:red;font-size:x-larger;">Lecturer name : </span>{{x.first_name}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-8px;"><span style="color:red;font-size:x-larger;">Department : </span>{{x.course}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-8px;"><span style="color:red;font-size:x-larger;">Specialization : </span>{{x.specialization}}</h3><br>
+<h3 style="white-space: initial !important;margin-bottom:-8px;"><span style="color:red;font-size:x-larger;">Qualification : </span>{{x.qualification}}</h3><br>
+
+</div>
+</div>
+</div>
+</div>
+
+<ion-infinite-scroll distance="1%" ng-if="noMoreItemsAvailable" on-infinite="loadolder()" style="background-color:white !important;" >
+</ion-infinite-scroll>
+
+</ion-content>
+
+</ion-view>
+
+<style>
+ .bar .back-button.hide {
+    display: inherit !important;
+	color:white;
+} 
+.active{
+	background-color:#0169b0;
+}
+</style>

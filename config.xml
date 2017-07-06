@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.haudai596641" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.hauduai.app" version="0.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Hauduai?</name>
   <description>
         An Ionic Framework and Cordova project.
@@ -16,28 +16,30 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="5000"/>
+  <preference name="orientation" value="portrait" />
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
-  <platform name="android">
+ 
+    <platform name="android">
     <icon src="iconldpi.png" density="ldpi"/>
     <icon src="iconmdpi.png" density="mdpi"/>
     <icon src="iconhdpi.png" density="hdpi"/>
     <icon src="iconxhdpi.png" density="xhdpi"/>
     <icon src="iconxxhdpi.png" density="xxhdpi"/>
     <icon src="iconxxxhdpi.png" density="xxxhdpi"/> 
-    <splash src="landldpi.png" density="land-ldpi"/>
-    <splash src="landmdpi.png" density="land-mdpi"/>
-    <splash src="landhdpi.png" density="land-hdpi"/>
-    <splash src="landxhdpi.png" density="land-xhdpi"/>
-     <splash src="landxxhdpi.png" density="land-xxhdpi"/>
-    <splash src="landxxxhdpi.png" density="land-xxxhdpi"/>
+    <splash src="how do 2.png" density="land-ldpi"/>
+    <splash src="how do 2.png" density="land-mdpi"/>
+    <splash src="how do 2.png" density="land-hdpi"/>
+    <splash src="how do 2.png" density="land-xhdpi"/>
+     <splash src="how do 2.png" density="land-xxhdpi"/>
+    <splash src="how do 2.png" density="land-xxxhdpi"/>
     
-    <splash src="portldpi.png" density="port-ldpi"/>
-    <splash src="portmdpi.png" density="port-mdpi"/>
-    <splash src="porthdpi.png" density="port-hdpi"/>
-    <splash src="portxhdpi.png" density="port-xhdpi"/>
-     <splash src="portxxhdpi.png" density="port-xxhdpi"/>
-    <splash src="portxxxhdpi.png" density="port-xxxhdpi"/> 
+    <splash src="how do 3.png" density="port-ldpi"/>
+    <splash src="how do 3.png" density="port-mdpi"/>
+    <splash src="how do 3.png" density="port-hdpi"/>
+    <splash src="how do 3.png" density="port-xhdpi"/>
+     <splash src="how do 3.png" density="port-xxhdpi"/>
+    <splash src="how do 3.png" density="port-xxxhdpi"/> 
   </platform>
 </widget>

@@ -1,0 +1,75 @@
+<!-- <ion-view view-title="From Expert Answers"> -->
+
+<div class="bar bar-header bar-positive">
+	<h1 class="title">Provide Answers</h1>
+	<a href="#/app/quiz"><button class="button button-clear button-positive" ng-click="gobaacck()"><h2><i class="ion-arrow-left-c" style="margin-right:45px;"></i>
+</h2>
+</button>
+</a>
+
+</div>
+<ion-content ng-controller="quiz_stuProvideAnsCtrl">
+
+	<div class="list">
+		<div class="item" style="margin-top:20px;">
+<div class="card">
+	<div class="item item-divider" style="background-color:#3c84b6;"> Quiz Question
+</div>
+<div class="item item-text-wrap">
+	{{get_questionnn_expert[0].quiz_question}}?
+</div>
+
+</div>
+
+<div class="card" ng-if="user == 'student'">
+	<div class="item item-dividerr" style="background-color:#3c84b6;"> Write your Answer
+</div>
+<div class="item item-text-wrap">
+	<form name="myForm" ng-submit="dooSubmit()" class="form-group">
+		<textarea rows="3" class="text" style="width:100%;" ng-model="$parent.quiz_answer"> </textarea>
+</form>
+</div>
+<div class="item item-divider">
+	<form name="myForm" ng-submit="dooSubmit()" class="form-group">
+		<button class="button button-small question" type="submit" style="width:-1px;height:35px; float:right;"> Submit
+</button>
+</form>
+</div>
+</div>
+
+
+<div class="card" style="margin-top:50px;" ng-repeat="res in quesss ">
+
+<div class="item item-divider">
+	<p style="color:#3c84b6;">
+<span style="color:black;"> Answer: </span>&nbsp;{{res.answer}}<br>
+<span style="color:black;"> Name of User: </span>&nbsp;{{res.user_name}}<br>
+<span style="color:black;"> Course: </span>&nbsp;{{res.course}}<br>
+<span style="color:black;"> Year(Level): </span>&nbsp;{{res.year}}<br>
+<span style="color:black;"> University: </span>&nbsp;{{res.university}}<br>
+<span style="color:black;"> Time and Date Posted: </span>&nbsp;{{res.created}}
+</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<ion-infinite-scroll distance="1%" ng-if="noMoreItemsAvailable" on-infinite="loadolder()" style="background-color:white !important;">
+</ion-infinite-scroll>
+
+
+</ion-content>
+
+
+</ion-view>
+<style>
+	.bar .back-button.hide {
+		display: inherit !important;
+		color: white;
+	}
+	
+	.active {
+		background-color: #0169b0;
+	}
+</style>

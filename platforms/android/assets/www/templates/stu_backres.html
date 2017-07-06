@@ -1,0 +1,57 @@
+<ion-view view-title="Recently Asked">
+	<ion-nav-buttons side="primary">
+		<a ng-href="#/app/stu_mostresponse" style="display:inline-block;color:#fff;position:fixed;left:10px;top:13px;" class="button-clear">
+<i class="icon ion-chevron-left" style="font-size:17px;"></i>
+</a>
+</ion-nav-buttons>
+<ion-content ng-controller="stu_anserCtrl">
+	<br>
+	<div class="list">
+		<div class="item" style="background-color:white !important;">
+<div class="row">
+
+	<h2 style="white-space:pre-wrap !important;text-align:justify;"><span style="color:blue;font-size:17px;">The Question :</span> {{que.question}}</h2>
+</div>
+<form name="myForm" ng-submit="doSubmit()" class="form-group" novalidate>
+
+
+	<div class="border">
+		<div class="row">
+
+			<textarea cols="40" rows="10" class="text" ng-model="answertyped" placeholder="Type your answer here.."></textarea>
+
+		</div>
+
+	</div>
+
+</form>
+<div style="color:red;float:left">Characters Left: {{qu-answertyped.length}} </div>
+<div class="row">
+	<a href="#/app/stu_quecom/{{aa}}">
+		<p><span>The Answer<span>: {{count_answeres}}</p></a>
+		    </div>
+		
+
+		<form  name="myForm" ng-submit="doSubmit()" class="form-group"  novalidate>
+		<div class="row">
+			<button class="button button-small question" ng-disabled="myForm.$invalid" type="submit" style="height:-30px;font-size:15px;margin-left:25px;"> Submit
+</button>
+</div>
+</form>
+</div>
+</div>
+
+</ion-content>
+
+</ion-view>
+
+<style>
+ .bar .back-button.hide {
+    display: inherit !important;
+	color:white;
+} 
+.active{
+	background-color:#0169b0;
+}
+
+</style>

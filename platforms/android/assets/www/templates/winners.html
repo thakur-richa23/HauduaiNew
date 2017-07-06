@@ -1,0 +1,45 @@
+<div class="bar bar-header bar-positive">
+	<h1 class="title">Winners</h1>
+	<a href="#/app/quiz"><button class="button button-clear button-positive" ng-click="gobaacck()"><h2><i class="ion-arrow-left-c" style="margin-right:45px;"></i></h2></button></a>
+
+</div>
+<ion-content ng-controller="quiz_winners_Ctrl">
+
+	<div class="list">
+		<div class="item" style="margin-top:20px;">
+			<div class="card" ng-repeat="x in winners_value">
+				<div class="item item-divider" style="background-color:#3c84b6;">
+					Winners
+				</div>
+				<div class="item item-text-wrap">
+					<p style="color:#3c84b6;">
+					<span style="color:black;"> Answer: </span>&nbsp;{{x.answer}}<br>
+          <span style="color:black;"> Name: </span>&nbsp;{{x.first_name}}<br>
+          <span style="color:black;"> Course: </span>&nbsp;{{x.course}}<br>
+          <span style="color:black;"> Year(Level): </span>&nbsp;{{x.year}}<br>
+          <span style="color:black;"> University: </span>&nbsp;{{x.university}}<br>
+          <span style="color:black;"> Time and Date Posted: </span>&nbsp;{{x.created}}
+          </p>
+				</div>
+
+			</div>
+		
+		</div>
+	</div>
+
+<ion-infinite-scroll distance="1%" ng-if="noMoreItemsAvailable" on-infinite="loadolder()" style="background-color:white !important;">
+		</ion-infinite-scroll>
+
+
+</ion-content>
+</ion-view>
+<style>
+	.bar .back-button.hide {
+		display: inherit !important;
+		color: white;
+	}
+	
+	.active {
+		background-color: #0169b0;
+	}
+</style>

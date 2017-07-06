@@ -1,0 +1,56 @@
+<ion-view view-title=" Polls">
+  <ion-nav-buttons side="primary">
+    <a ng-href="#/app/stu_browse" style="display:inline-block;color:#fff;position:fixed;left:10px;top:13px;" class="button-clear">
+<i class="icon ion-chevron-left" style="font-size:17px;"></i>
+</a>
+</ion-nav-buttons>
+<ion-content ng-controller="stu_pollsCtrl">
+  <form ng-submit="serverSideChange()" style="height:120px;">
+<div class="card" ng-repeat="x in openpoll">
+
+  <div class="item item-divider" style="background-color:white !important;color:#444 !important; "> {{x[0].question}}
+<input type="hidden" ng-model="queid" ng-value="as">
+</div>
+<ion-list>
+
+  <ion-checkbox ng-repeat="item in x" ng-value="item.ans_id" ng-model="data.serverSide" ng-change="serverSideChange(item)"
+    name="server-side" style="background-color:white !important;color:#444 !important; font-size:22px; margin-bottom:-12px;"> {{ item.answer }}
+</ion-checkbox>
+
+</ion-list>
+<div class="item item-divider" style="background-color:white !important;color:#444 !important;">
+<a href="">
+  <button class="button button-small button-calm" ng-click="myvote(item)">
+    Vote
+</button></a>
+<a href="#/app/stu_piechart/{{x[0].id}}"><button class="button button-small button-assertive" ng-click="mstar()" style="float:right;"> Results</button></a>
+
+</div>
+
+</div>
+
+<div class="card" ng-repeat="x in polls" style="margin-bottom:-18px;">
+
+<div class="item item-text-wrap" style="background-color:white !important;color:#444 !important; font-size:14px;"> {{x.question}}
+</div>
+<div class="item item-divider" style="background-color:white !important;color:#444 !important;">
+<p style="margin-top:-12px;"> Polls Opened :{{x.polls_opened}}</p>
+<p> Polls Closed :{{x.polls_closed}}</p>
+</div>
+<div class="item item-divider" style="background-color:white !important;color:#444 !important;">
+<a href="#/app/stu_piechart/{{x.id}}">
+  <button class="button button-small button-assertive">
+Results 
+</button></a>
+<a href="#/app/stu_pollsresult/{{x.id}}">
+  <button class="button button-small button-calm">
+    Comments
+</button></a>
+</div>
+</div>
+
+<ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
+</form>
+</ion-content>
+
+</ion-view>

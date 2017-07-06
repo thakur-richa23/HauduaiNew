@@ -1,0 +1,43 @@
+<ion-view view-title=" Polls">
+	<ion-nav-buttons side="primary">
+		<a ng-href="#/app/browse" style="display:inline-block;color:#fff;position:fixed;left:10px;top:13px;" class="button-clear">
+<i class="icon ion-chevron-left" style="font-size:17px;"></i>
+</a>
+</ion-nav-buttons>
+<ion-content ng-controller="pollsCtrl">
+	<form ng-submit="serverSideChange()" style="height:120px;">
+<div class="card">
+	<div class="item item-divider" style="background-color:white !important;color:#444 !important; "> {{openpoll[0].question}}
+<input type="hidden" ng-model="queid" ng-value="as">
+</div>
+<ion-list>
+	<ion-checkbox ng-repeat="item in openpollanswer" ng-value="item.id" ng-model="data.serverSide" ng-change="serverSideChange(item)"
+		name="server-side" style="background-color:white !important;color:#444 !important; font-size:22px; margin-bottom:-12px;"> {{ item.answer }}
+</ion-checkbox>
+
+</ion-list><br>
+
+<li class="item" style="margin-left:10px;">
+<div class="roww">
+	<div class="col" style="font-size:14px;margin-left:-15px;">Name: </div>
+<div class="col col-35" style="margin-left:46px;margin-top:-47px;width:100%;">
+<input id="leave" placeholder="Enter Name" ng-model="subject" type="text" style="margin-top:5px;" />
+
+</div>
+</div>
+</li>
+<li class="item" style="margin-left:10px;">
+<div class="roww">
+	<div class="col" style="font-size:14px;margin-left:-15px;">Email: </div>
+<div class="col col-35" style="margin-left:46px;margin-top:-47px;width:100%;">
+<input id="leave" placeholder="Enter Email" ng-model="subject" type="email" style="margin-top:5px;" />
+
+</div>
+</div>
+</li>
+</div>
+
+<ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
+</form>
+</ion-content>
+</ion-view>

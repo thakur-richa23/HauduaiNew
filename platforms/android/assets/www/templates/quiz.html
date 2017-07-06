@@ -1,0 +1,41 @@
+<ion-view view-title="Quiz For A Prize">
+
+	<ion-nav-back-button>
+		<button class="button button-clear button-positive"><h2><i class="ion-arrow-left-c"></i></h2></button>
+	</ion-nav-back-button>
+
+	<ion-content ng-controller="quizCtrl">
+		<div class="list card" ng-repeat="data in quest">
+
+
+			<div class="item item-body" style="background-color:white !important;">
+
+<p style="color:#3c84b6">
+<span style="color:black;">Quiz:</span> {{data.quiz_question|htmlToPlaintext|removeHTMLTags}}<br>
+<span style="color:black;">Quiz Prize: </span>{{data.prize}}<br>
+<span style="color:black;">Open Date: </span>{{data.quiz_start_time}} <span style="color:black;">Close Date: </span>{{data.quiz_end_time}}<br>
+
+
+</p>
+<p ng-if="(date| date:'MM/dd/yyyy') <= (data.quiz_end_time)">
+	<a href="#/quiz_lecprovide/{{data.id}}" class="subdued"><button class="button button-dark button-small">Provide Answers</button></a>
+
+</p>
+<p ng-if="(date| date:'MM/dd/yyyy') > (data.quiz_end_time)">
+	<a href="#/view_response/?id={{data.id}}" class="subdued"><button class="button button-dark button-small" ng-click="start()">View Responses</button></a>
+	<a href="#/winners/?id={{data.id}}" class="subdued"><button class="button button-dark button-small" ng-click="start()">Winners</button></a>
+</p>
+</div>
+</div>
+
+
+<div class="item" style="background-color:white !important;" ng-show="answer_notavail">
+
+</div>
+<ion-infinite-scroll distance="1%" ng-if="noMoreItemsAvailable" on-infinite="loadolder()" style="background-color:white !important;">
+</ion-infinite-scroll>
+
+
+</ion-content>
+
+</ion-view>

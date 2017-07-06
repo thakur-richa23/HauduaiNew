@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\libs"><file name="cordova-generic-ad.jar" path="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\libs\cordova-generic-ad.jar"/><file name="gcm.jar" path="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\libs\gcm.jar"/></source></dataSet><dataSet config="release"><source path="C:\Users\mediaoncloud\Desktop\Haudai\platforms\android\src\release\jniLibs"/></dataSet></merger>

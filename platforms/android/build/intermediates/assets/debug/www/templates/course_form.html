@@ -1,0 +1,37 @@
+<ion-view hide-nav-bar="true">
+    <ion-content ng-controller="courseformCtrl">
+        <h3 style="text-align:center;margin-top:30px;color:#3c84b6;"><b>Submit Form</b></h3>
+       <form name="myForm" ng-submit="submitt()" class="form-group" novalidate style="margin-top:40px;">
+<div class="row">
+	<div class="col col-100">
+		<input class="inputbox" type="email" ng-model="email" placeholder="Enter Email " style="font-size:13px;border:1.5px solid #3c84b6;background:rgba(100,0,255,0.1);margin-bottom:-12px;"><br>
+</div>
+</div>
+<div class="row">
+	<div class="col col-100">
+		<input class="inputbox" type="text" ng-model="faculty" placeholder="Enter Faculty " style="font-size:13px;border:1.5px solid #3c84b6;background:rgba(100,0,255,0.1);margin-bottom:-12px;"><br>
+</div>
+</div>
+<div class="row">
+<div class="col col-100">
+	<input class="inputbox" type="text" ng-model="course" placeholder="Enter Course" style="font-size:13px;border:1.5px solid #3c84b6;background:rgba(100,0,255,0.1);margin-bottom:-12px;">
+</div>
+</div>
+<br><br>
+<button class="button button-small button-positive" type="submit" style="margin-left:140px;font-size:14px;height:50px;width:70px;color:white;border-radius:8px;">Submit</button>
+</form>
+</ion-content>
+</ion-view>
+<style>
+
+.inputbox{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #3E4572;
+    border-radius: 6px;
+    box-sizing: border-box;
+	
+}
+</style>

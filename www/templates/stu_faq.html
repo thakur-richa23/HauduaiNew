@@ -1,0 +1,31 @@
+<ion-view  view-title="Frequently Asked Questions">
+ 
+<ion-content  ng-controller="stu_faqCtrl">
+
+ <div>
+		<div class="item" style="background-color:white !important;">
+		<div class="card12" ng-repeat="x in faqpage">
+		      <h2 style="text-align: justify;"><span style="font-size:18px;color:#292d63;"><b>Question</b></span> : {{x.faq_question|htmlToPlaintext|removeHTMLTags}}</h2><br>
+		      <h2 style="color:#8f8d93; text-align: justify;"><span style="font-size:18px;color:#292d63;"><b>Answer</b></span> : {{x.faq_answer|htmlToPlaintext}}</h2><hr><br>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</ion-content>
+<div class="tabs">
+	  <a href="#/app/student_new" class="tab-item clr" style="background:#0065ff !important;color:#fff !important;">
+		Recent Questions
+	  </a>
+	  <a href="#/app/stu_mostresponse" class="tab-item clr" style="background:#237bff !important;color:#fff !important;">
+		Most Responses
+	  </a>
+	  <a href="#/app/stu_recents" class="tab-item clr" style="background:#0a6cff !important;color:white !important;">
+		Recently Answered
+	  </a>
+	  <a  href="#/app/stu_noans" class="tab-item clr" style="background:#3a89ff !important;color:white !important;">
+		No Answers
+	  </a>
+	</div>	
+</ion-view >

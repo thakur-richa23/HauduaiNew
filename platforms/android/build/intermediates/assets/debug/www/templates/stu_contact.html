@@ -1,0 +1,63 @@
+<ion-view view-title="Contact Us">
+
+	<ion-content ng-controller="stucontactCtrl">
+		<br>
+		<form name="myForm" ng-submit="Submit()" class="form-group" novalidate>
+			<div class="card12" style="margin-left:10px;font-size:20px;">
+<h5 style="text-align:center;">Feel free to contact us</h5>
+<hr /style="width:320px;">
+</div>
+<ul class="list">
+	<li class="item2">
+		<div class="roww">
+			<div class="col" style="font-size:14px;margin-left:-15px;">Name</div>
+<div class="col col-35" style="margin-left:65px;margin-top:-32px;font-size:15px;"> {{profuser.first_name}}
+
+</div>
+</div>
+</li><br><br>
+<li class="item2">
+	<div class="roww">
+		<div class="col col-65" style="font-size:14px;margin-left:-15px;">Email ID</div>
+<div class="col col-35" style="margin-left:65px;margin-top:-31px;font-size:15px;"> {{profuser.email}}
+
+</div>
+</div>
+</li><br><br>
+<li class="item2">
+	<div class="roww">
+		<div class="col" style="font-size:14px;margin-left:-15px;">Subject</div>
+<div class="col col-35" style="margin-left:46px;margin-top:-47px;">
+<input id="leave" placeholder="Enter subject" ng-model="subject" type="text" value="" class="button button-stable" style="margin-right:10px;padding-bottom:10px;"/>
+
+</div>
+</div>
+</li><br>
+
+<li class="item2">
+	<div class="roww">
+		<div class="border" style="margin-right:14px;">
+			<textarea class="text" ng-model="answertyped" placeholder="Message.."></textarea>
+		</div>
+	</div>
+</li>
+
+<label class="item" style="background-color:#fff !important; margin-top:1px;margin-right:12px;">
+<button class="button button-positive btn1" ng-disabled="myForm.$invalid" type="submit" style="width:100%;display: block;margin-right: 0px;margin-left: 0; margin-top: 3px; margin-bottom: 3px; border-right-width: 1px;border-left-width: 1px;border-radius: 4px;background:#0169b0;">Send Message</button>
+</label>
+</ul>
+
+
+</form>
+<div class="footer" style="margin-top:3px;">
+
+
+<h3 class="text-center icon ion-android-globe"> Our Office</h3>
+<h5 class="text-center">Hauduai? Nigeria Limited Lagos, Nigeria.</h5>
+
+</div>
+</ion-content>
+
+
+
+</ion-view>

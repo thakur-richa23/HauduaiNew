@@ -1,0 +1,224 @@
+<ion-scroll ng-controller="studentregCtrl">
+	<div class="bar bar-header head1">
+		<a href="#/app/stu_register" class="button button-icon ion-ios-arrow-back"></a>
+		<h1 class="title" style="color:white;">Register As Student</h1>
+</div>
+<form name="myForm" ng-submit="Submit()" class="form-group" novalidate>
+
+	<div class="list has-subheader" style="width: 89%;
+    margin-left: 5%;">
+
+<div class="row" style="margin-bottom:5px; margin-top:-30px;">
+<div class="col col-50  form-groups">
+	<label class="item item-input" style="color:red;">
+<input type="text" placeholder="First Name" ng-model="fname" style="margin-top:-10px;">
+</label>
+
+</div>
+<div class="col col-50 form-groups">
+
+	<label class="item item-input" style="color:red;">
+<input type="text" placeholder="Last Name" ng-model="lname" style="margin-top:-10px;">
+</label>
+
+</div>
+</div>
+<div class="row" style="margin-bottom:5px;">
+<div class="col col-100 form-groups" style="color:red;">
+<label class="item item-input item-select">
+					<div class="input-labell input-label-text">&nbsp;</div>
+					
+					  
+					  <select ng-model="qualified" class="sel">
+							 <option value="">Course Duration</option>
+						  <option ng-repeat="x in suffix" value="{{x.course_value}}">{{x.course_time}}</option> 
+						</select>
+				</label>
+</div>
+
+</div>
+
+
+<div class="row" style="margin-bottom:5px;">
+<div class="col col-100 form-groups" style="color:red;">
+
+<label class="item item-input item-select">
+				 
+                    <div class="input-labell">
+                        &nbsp;
+                    </div>
+                    
+                       
+                    <select ng-model="emp_status" class="sel" required>
+						 <option value=""> Start of Academic Year</option>
+						   <option ng-repeat="x in employment_status" value="{{x.acd_value}}">{{x.acd_year}}</option>
+						  
+					</select>
+					
+                </label>
+
+</div>
+</div>
+
+<div class="row" style="margin-bottom:5px;">
+<div class="col col-100 form-groups" style="color:red;" ng-show="shownto">
+<label class="item item-input item-select">
+					<div class="input-labell input-label-text">&nbsp; </div>
+					
+					  
+						<select class="sel" ng-Change="getsubsector()" ng-model="stu_uni" required>
+								<option value="" ng-click="change_input()">Name Of University</option>
+								<option ng-repeat="x in N_university" value={{x.id}}>{{x.university_name}}</option>
+						
+						</select>
+				</label>
+</div>
+
+</div>
+
+
+
+<div class="row" style="margin-bottom:5px;">
+<div class="col col-100 form-groups" style="color:red;" ng-show="SHOWNto">
+<label class="item item-input item-select">
+					<div class="input-labell input-label-text">&nbsp; </div>
+					
+					  
+					<select ng-Change="getsubsubsector()" ng-model="stu_faculty" class="sel" required>
+							<option value="" ng-click="CHANGE_input()"> Faculty</option>
+							<option ng-repeat="x in Faculty" value={{x.id}} >{{x.faculty_name}}</option>
+    
+    			</select> 
+					</label>
+</div>
+
+</div>
+
+
+
+<div class="row" style="margin-bottom:5px;">
+<div class="col col-30 form-groups" ng-show="ShownTO" style="color:red;">
+<label class="item item-input item-select">
+					<div class="input-labell input-label-text">&nbsp;</div>
+				
+					 
+					  <select ng-change="getsubyearlevel();"  ng-model="stu_course" class="sel" required>
+							<option value="" > Course </option>
+						<option ng-repeat="x in course" value={{x.id}} >{{x.course_name}}</option>
+							
+    				</select>
+				</label>
+</div>
+<div class="col col-70">
+					
+<a ng-href="#/app/course_form"><div class="button button-block btn2" style="background-color:#387ef5;">Can’t find my course? Click Here</div></a>
+</div>
+</div>
+
+<div class="row" style="margin-bottom:5px;">
+<div class="col col-100 form-groups" style="color:red;">
+<label class="item item-input item-select">
+					<div class="input-labell input-label-text">&nbsp;</div>
+					
+					  
+					  <select ng-model="stu_ylevel" class="sel" required>
+      <option value=""> Year (Level)</option>
+      <option ng-repeat="x in year_level" value={{x.id}} >{{x.year_level}}</option>
+    </select>
+				</label>
+</div>
+</div>
+
+
+<div class="row" style="margin-bottom:5px;">
+<div class="col col-100 form-groups" style="color:red;">
+
+<label class="item item-input">
+	<input type="number" placeholder="Phone Number" ng-model="phone_no" required>  
+</label>
+
+</div>
+
+</div>
+
+<div class="row">
+	<div class="col col-50 form-groups" style="color:red;">
+
+<select ng-model="birthmonth" style="width:100%;height:30px;">
+<option value="">Birth Month</option>
+<option value="{{x}}" ng-repeat="x in playlists">{{x}}</option>
+
+</select>
+</div>
+<div class="col col-25">
+	<select ng-model="daybirth" style="width:100%;height:30px;">
+<option value="">Day</option>
+<option value="{{x}}" ng-repeat="x in monthday">{{x}}</option>
+
+</select>
+</div>
+<div class="col col-25">
+	<select ng-model="b_year" style="width:100%;height:30px;">
+<option value="">Year</option>
+<option value="{{x}}" ng-repeat="x in yearmn">{{x}}</option>
+
+</select>
+</div>
+
+</div>
+
+<div class="row">
+	<div class="col col-100 form-groups" style="color:red;">
+<label class="item item-input">
+					 <input type="email" placeholder="Email" ng-model="email" required>
+				</label>
+</div>
+</div>
+<div class="row">
+	<div class="col col-100 form-groups" style="color:red;">
+<label class="item item-input">
+					 <input type="password"  minlength="6" placeholder="Password (Min 6 character)" ng-model="password">
+				</label>
+</div>
+</div>
+<div class="row">
+	<div class="col col-100 form-groups" style="color:red;">
+<label class="item item-input">
+				 <input type="Password" placeholder="Confirm Password" ng-model="cpassword">
+				</label>
+</div>
+</div>
+<div class="row">
+	<div class="col col-100 form-groups" style="color:red; margin-top:15px;">
+<label class="item item-input item-select">
+					<div class="input-labell input-label-text">&nbsp;</div>
+					
+					  <select ng-model="gettoknow" class="sel" required>
+		<option value=""> How did you Know about Hauduai?</option>
+		<option ng-repeat="x in know_about_hauduai" >{{x.title}}</option>
+		 
+		</select>
+				</label>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="col col-100 form-groups" style="margin-left:20px;">
+<ion-checkbox dark checked="true" value="check" ng-model="filter" required> I agree to terms and conditions</ion-checkbox>
+</div>
+
+
+<label class="item" style="background-color:#fff !important;">
+<button class="button button-positive btn1" ng-disabled="((!filter) || (myForm.$invalid))" type="submit" style="width:100%;	display: block;margin-right: 0px;
+    margin-left: 0; margin-top: 5px; margin-bottom: 5px; border-right-width: 1px;
+    border-left-width: 1px;border-radius: 4px;" > Register
+</button>
+</label>
+
+</form>
+
+</ion-scroll>

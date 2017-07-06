@@ -1,0 +1,63 @@
+<ion-view view-title="Events" >
+<ion-nav-buttons side="primary">
+	 <a  ng-href="#/app/stu_browse" style="display:inline-block;color:#fff;position:fixed;left:10px;top:13px;" class="button-clear">
+      <i class="icon ion-chevron-left" style="font-size:17px;"></i>
+    </a>
+ </ion-nav-buttons> 
+<ion-tabs class="tabs-light tabs-icon-top">
+
+  <ion-tab title="Upcoming" icon-on="ion-ios-alarm" icon-off="ion-ios-alarm-outline" on-select="stu_upcoming()">
+  </ion-tab>
+
+  <ion-tab title="Current" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" on-select="stu_current()">
+  </ion-tab>
+
+  <ion-tab title="Past" icon-on="ion-ios-recording" icon-off="ion-ios-recording-outline" on-select="stu_past()">
+  </ion-tab>
+
+</ion-tabs>
+
+<ion-content style="margin-top:50px;">
+
+<div class="list card" ng-repeat="x in stuevents" style="margin-right:20px;">
+ 
+  <div class="item item-avatar" style="background-color: #fff !important;
+     color: #444 !important">
+    <img src="http://www.hauduai.com.ng/{{x.image}}">
+    <h2>{{x.title}}</h2>
+    <p>Event Date:{{x.date}}</p>
+  </div>
+
+  <div class="item item-body" style="background-color: #fff !important;
+     color: #444 !important ">
+    <img class="full-image" src="http://www.hauduai.com.ng{{x.image}}" style="height:150px;">
+    <p style="text-align:justify;">
+     {{x.description|htmlToPlaintext|removeHTMLTags}}
+    </p>
+    <p>
+      <span style="color:black;">Location:&nbsp;&nbsp;&nbsp; </span>  {{x.location}}
+    </p>
+	<p >
+      <span style="color:black;">Phone: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  </span>   {{x.phone}}
+    </p>
+  </div>
+
+</div>
+
+</ion-content>
+	
+</ion-view>
+</div>
+<style>
+.bar .button.back-button, .bar button.back-button {
+    display: none !important;
+    margin-right: 5px;
+    padding: 0;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.bar .back-button.hide {
+     display: none !important; 
+    color: white;
+}
+</style>

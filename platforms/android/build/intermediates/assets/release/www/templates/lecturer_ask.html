@@ -1,0 +1,77 @@
+<ion-view view-title="Ask a Lecturer">
+	<ion-content ng-controller="stu_ask_lectCtrl">
+		<form name="myForm">
+			<br><br>
+			<div class="border">
+				<textarea class="text" cols="40" ng-model="que" ng-model="{{qu}}" maxlength="{{qu}}" placeholder="Type your question here.."
+					required></textarea>
+			</div>
+			<div style="float:left;font-size:12px;margin-left:12px;">Characters Left: &nbsp;</div>
+<div style="color:red;float:left;font-size:12px;"> {{qu-que.length}}</div>
+</div>
+<div class="list">
+	<div class="list" style="margin-bottom:-10px;">
+<label class="item item-input item-select">
+			<div class="input-label">
+				&nbsp;
+			</div>
+			<select  id="facName" ng-Change="changed()" ng-model="lec_fac" required style="color:#333;">
+<option value="">Select Faculty</option>
+<option ng-repeat="x in lecfaculty" value="{{x.id}}">{{x.faculty_name}}</option>
+</select>
+</label>
+</div>
+
+</div>
+<div class="list" ng-show="note">
+	<div class="list" style="margin-bottom:-10px;">
+<label class="item item-input item-select">
+			<div class="input-label">
+				&nbsp;
+			</div>
+			<select id="DeptName" ng-model="lec_dept" ng-Change="changd()" style="color:#333;">
+<option value="">“Select Department</option>
+<option ng-repeat="x in depart" value="{{x.id}}">{{x.course_name}}</option>
+</select>
+</label>
+</div>
+
+</div>
+<div class="list" ng-show="note">
+	<div class="list" style="margin-bottom:10px;">
+<label class="item item-input item-select">
+			<div class="input-label">
+				&nbsp;
+			</div>
+			<select id="specName" ng-model="lec_specal" style="color:#333;">
+<option value="">“Select Specialization(Optional)</option>
+<option ng-repeat="x in special" value="{{x.id}}">{{x.lec_special}}</option>
+</select>
+</label>
+</div>
+
+</div>
+<div class="text-center">
+	<button class="ask" ng-disabled="" ng-click="lec_submitt()" style="border-radius:10px;margin-left:-20px;margin-top:18px;">Ask a Lecturer</button>
+<a class="ask" href="#/app/stu_browse" style="background:red;color:white;border-radius:9px;margin-right:10px;">Back</a>
+</div>
+</form>
+
+</ion-content>
+</ion-view>
+
+<style>
+.item-dividerr{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 30px;
+    background-color: deepskyblue;
+    color: #222;
+    font-weight: 500;
+}
+.border{
+	border: 4px solid #9acbec;
+    margin: 3px;
+    padding: 2px;
+}
+</style>
